@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+.travelex-logo {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+}
+
+.mainheader {
+    height: 52rem;
+    background-image: url('assets/img/background01.jpg');
+    background-size: cover;
+}
+
+.mainheader h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 400%;
+}
+
+.mainheader h2 {
+    font-size: 200%;
+}
+
+.mainheader p {
+    font-size: 140%;
+}
+
+.postheader {
+    height: 12rem;
+    background-image: url('assets/img/background01.jpg');
+    background-size: cover;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+#features {
+    height: 32rem;
+    background-image: url('assets/img/background02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#features h3{
+    font-size: 300%;
+}
+
+#choices {
+    background-color:#f2f2f2;
+}
+
+#addoffers {
+    height: 42rem;
+    background-image: url('assets/img/background03.jpg');
+    background-size: cover;
+}
+
+#footercontact {
+    padding: 1rem;
+}

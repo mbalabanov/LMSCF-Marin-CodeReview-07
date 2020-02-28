@@ -1,0 +1,18 @@
+<div class="row pt-5 my-2" id="travelofferlist">
+    <div class="col-12 text-center">
+        <div class="row p-3">
+            <div class="col-12 text-center">
+                <h2>Beautiful trips with&hellip; Special offers</h2>
+                <h3>Order a trip to any of these destinations and get a special discount with a bunch of other goodies.</h3>
+            </div>
+        </div>
+        <div class="row px-5">
+			<div class="col-lg-4 col-sm-6 text-center p-1 mb-4" *ngFor="let item of travelitems">
+				<img src="{{ item.photo }}" alt="{{ item.name }}" class="py-2 img-fluid">
+                <h3>{{ item.name }}</h3>
+				<h5>{{ item.price | currency }}</h5>
+                <p>{{ item.description }}</p>
+			</div>
+        </div>
+    </div>
+</div>

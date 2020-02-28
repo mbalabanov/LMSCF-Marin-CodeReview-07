@@ -1,0 +1,33 @@
+<footer class="text-light bg-dark p-5">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <h4 class="my-4">About us</h4>
+            <p>Travel and discover the world with our travel agency. Find the best trips, professional guides, and the most convenient accommodations.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <h4 class="my-4">Quick Links</h4>
+            <ul>
+                <li>Home</li>
+                <li>Travel Offers</li>
+                <li>Blog Posts</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <h4 class="my-4">Latest News</h4>
+			<ul>
+				<li *ngFor="let item of blogitems">{{ item.title }}</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <h4 class="my-4">Subscribe to Our Newsletter</h4>
+            <p>Get the latest traveling news and the hottest last-minute offer right to your inbox. Enter your emails and keep informed!</p>
+            <p><input type="text" id="footercontact" name="contact" placeholder="Enter your emial here*"></p>
+            <p><button class="btn btn-outline-light">Subscribe</button></p>
+        </div>
+    </div>
+    <div class="row mt-4 border-top">
+        <div class="col-12 pt-4">
+            Copyright © 2019 Travelex. All Rights Reserved
+        </div>
+    </div>
+</footer>
