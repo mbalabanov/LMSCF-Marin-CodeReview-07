@@ -16,10 +16,6 @@ export class ListComponent implements OnInit {
 
   addToCart(travelitem) {
     this.cartService.addToCart(travelitem);
-
-    console.log('travelitem');
-    console.log(travelitem);
-
     window.alert('Your product has been added to the cart!');
   }
 
