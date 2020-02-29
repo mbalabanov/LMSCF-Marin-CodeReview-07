@@ -8,12 +8,15 @@ import { blogitems } from '../blogdata';
   styleUrls: ['./blogpost.component.css']
 })
 export class BlogpostComponent implements OnInit {
-  
+  blogitem;
   blogitems = blogitems;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.blogitem = blogitems[+params.get('postId')];
+     });
   }
 
 }

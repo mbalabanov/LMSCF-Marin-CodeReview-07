@@ -6,11 +6,11 @@
             </div>
         </div>
         <div class="row px-5">
-			<div class="col-lg-4 col-sm-6 text-left px-5 pb-5" *ngFor="let item of blogitems">
-				<img src="{{ item.photo }}" alt="{{ item.title }}" class="py-4 img-fluid">
-				<h3 class="py-2">{{ item.title }}</h3>
+			<div class="col-lg-4 col-sm-6 text-left px-5 pb-5" *ngFor="let item of blogitems; index as postId">
+				<a [routerLink]="['/blogpost', postId]"><img src="{{ item.photo }}" alt="{{ item.title }}" class="py-4 img-fluid"></a>
+                <h3 class="py-2"><a [routerLink]="['/blogpost', postId]">{{ item.title }}</a></h3>
                 <p>{{ item.teaser }}</p>
-                <p><button class="btn btn-outline-secondary">Read post</button></p>
+                <p><a class="btn btn-outline-secondary" [routerLink]="['/blogpost', postId]">Read post</a></p>
 			</div>
         </div>
     </div>

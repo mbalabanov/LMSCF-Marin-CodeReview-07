@@ -9,9 +9,10 @@
         <div class="row px-5">
 			<div class="col-lg-4 col-sm-6 text-center p-1 mb-4" *ngFor="let item of travelitems">
 				<img src="{{ item.photo }}" alt="{{ item.name }}" class="py-2 img-fluid">
-                <h3>{{ item.name }}</h3>
+                <h3 class="mt-2">{{ item.name }}</h3>
+                <p>{{ item.description }}<br>
+                Starts on <strong>{{ item.startdate }}</strong>, for <strong>{{ item.duration }}</strong> days.</p>
 				<h5>{{ item.price | currency }}</h5>
-                <p>{{ item.description }}</p>
 			</div>
         </div>
     </div>
