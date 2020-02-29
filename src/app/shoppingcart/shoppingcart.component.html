@@ -15,6 +15,9 @@
 <div class="row mx-5 mt-2 mb-5">
     <div class="col-8 offset-2">
         <h2>Your Cart</h2>
+
+
+
         <ng-template [ngIf]="cartitems.length > 0" [ngIfElse]="none">
             <table class="cart-item table">
                 <tr *ngFor="let cartitem of cartitems">

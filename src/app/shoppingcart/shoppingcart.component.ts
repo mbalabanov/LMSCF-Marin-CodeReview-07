@@ -26,7 +26,6 @@ export class ShoppingcartComponent implements OnInit {
     this.discount20 = this.totalprice / 5;
     this.discountedPrice10 -= this.discount10;
     this.discountedPrice20 -= this.discount20;
-    console.log(this.totalprice);
   }
 
   ngOnInit(): void {
