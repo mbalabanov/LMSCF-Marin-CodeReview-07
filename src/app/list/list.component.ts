@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { travelitems } from '../travelinfos';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-list',
@@ -11,7 +12,16 @@ export class ListComponent implements OnInit {
 
   travelitems = travelitems;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private cartService: CartService) { }
+
+  addToCart(travelitem) {
+    this.cartService.addToCart(travelitem);
+
+    console.log('travelitem');
+    console.log(travelitem);
+
+    window.alert('Your product has been added to the cart!');
+  }
 
   ngOnInit(): void {
   }

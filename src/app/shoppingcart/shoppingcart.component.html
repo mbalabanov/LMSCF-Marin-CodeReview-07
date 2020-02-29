@@ -1,0 +1,35 @@
+<app-standardheader></app-standardheader>
+
+<div class="row m-2">
+    <div class="col-8 offset-2">
+        <nav aria-label="breadcrumb" class="mt-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+                <li class="breadcrumb-item"><a routerLink="/travel">Travel Offers</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Shopping Cart</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="row mx-5 mt-2 mb-5">
+    <div class="col-8 offset-2">
+        <h2>Your Cart</h2>
+        <ng-template [ngIf]="cartitems.length > 0" [ngIfElse]="none">
+            <table class="cart-item table" *ngFor="let cartitem of cartitems">
+                <tr>
+                    <td valign="top"><h3>{{ cartitem.name }}</h3>
+                        <p>{{ cartitem.description }}</p>
+                    </td>
+                    <td class="text-right" valign="top"><strong>{{ cartitem.price | currency }}</strong></td>
+                </tr>
+            </table>
+        </ng-template>
+        <ng-template #none>
+            <p>There are no items in your shopping cart.<br>Please go <a routerLink="/travel">back to travel offers</a> to continue shopping.</p>
+            <p><a class="btn btn-outline-secondary" routerLink="/travel">Travel Offers</a></p>
+        </ng-template>
+    </div>
+</div>
+
+<app-footer></app-footer>

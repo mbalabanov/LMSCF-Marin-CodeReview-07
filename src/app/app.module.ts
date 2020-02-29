@@ -17,6 +17,7 @@ import { TraveloffersComponent } from './traveloffers/traveloffers.component';
 import { StandardheaderComponent } from './standardheader/standardheader.component';
 import { BlogpostComponent } from './blogpost/blogpost.component';
 import { AddoffersComponent } from './addoffers/addoffers.component';
+import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AddoffersComponent } from './addoffers/addoffers.component';
     TraveloffersComponent,
     StandardheaderComponent,
     BlogpostComponent,
-    AddoffersComponent
+    AddoffersComponent,
+    ShoppingcartComponent
   ],
   imports: [
     BrowserModule,

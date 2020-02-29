@@ -7,12 +7,13 @@
             </div>
         </div>
         <div class="row px-5">
-			<div class="col-lg-4 col-sm-6 text-center p-1 mb-4" *ngFor="let item of travelitems">
-				<img src="{{ item.photo }}" alt="{{ item.name }}" class="py-2 img-fluid">
-                <h3 class="mt-2">{{ item.name }}</h3>
-                <p>{{ item.description }}<br>
-                Starts on <strong>{{ item.startdate }}</strong>, for <strong>{{ item.duration }}</strong> days.</p>
-				<h5>{{ item.price | currency }}</h5>
+			<div class="col-lg-4 col-sm-6 text-center p-1 mb-4" *ngFor="let travelitem of travelitems">
+				<img src="{{ travelitem.photo }}" alt="{{ travelitem.name }}" class="py-2 img-fluid">
+                <h3 class="mt-2">{{ travelitem.name }}</h3>
+                <p>{{ travelitem.description }}<br>
+                Starts on <strong>{{ travelitem.startdate }}</strong>, for <strong>{{ travelitem.duration }}</strong> days.</p>
+                <h5>{{ travelitem.price | currency }}</h5>
+                <p><button class="btn btn-outline-secondary" (click)="addToCart(travelitem)">Add to cart</button></p>
 			</div>
         </div>
     </div>
