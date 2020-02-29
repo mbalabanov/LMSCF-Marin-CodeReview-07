@@ -4,15 +4,14 @@
             <div class="col-12 text-center">
                 <h2>Beautiful trips with&hellip; Special offers</h2>
                 <h3>Order a trip to any of these destinations and get a special discount with a bunch of other goodies.</h3>
-                <p><button class="btn btn-outline-light" routerLink="/shoppingcart">Shopping Cart</button></p>
+                <p><button class="btn btn-outline-secondary" routerLink="/shoppingcart">Shopping Cart</button></p>
             </div>
         </div>
         <div class="row px-5">
 			<div class="col-lg-4 col-sm-6 text-center p-1 mb-4" *ngFor="let travelitem of travelitems">
 				<img src="{{ travelitem.photo }}" alt="{{ travelitem.name }}" class="py-2 img-fluid" (click)="addToCart(travelitem)">
                 <h3 class="mt-2">{{ travelitem.name }}</h3>
-                <p>{{ travelitem.description }}<br>
-                Starts on <strong>{{ travelitem.startdate }}</strong>, for <strong>{{ travelitem.duration }}</strong> days.</p>
+                <p>{{ travelitem.description }}. Starts on <strong>{{ travelitem.startdate }}</strong>, for <strong>{{ travelitem.duration }}</strong> days.</p>
                 <h5>{{ travelitem.price | currency }}</h5>
                 <p><button class="btn btn-outline-secondary" (click)="addToCart(travelitem)">Add to cart</button></p>
 			</div>
