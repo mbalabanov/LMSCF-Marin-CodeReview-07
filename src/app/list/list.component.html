@@ -8,7 +8,7 @@
         </div>
         <div class="row px-5">
 			<div class="col-lg-4 col-sm-6 text-center p-1 mb-4" *ngFor="let travelitem of travelitems">
-				<img src="{{ travelitem.photo }}" alt="{{ travelitem.name }}" class="py-2 img-fluid">
+				<img src="{{ travelitem.photo }}" alt="{{ travelitem.name }}" class="py-2 img-fluid" (click)="addToCart(travelitem)">
                 <h3 class="mt-2">{{ travelitem.name }}</h3>
                 <p>{{ travelitem.description }}<br>
                 Starts on <strong>{{ travelitem.startdate }}</strong>, for <strong>{{ travelitem.duration }}</strong> days.</p>
