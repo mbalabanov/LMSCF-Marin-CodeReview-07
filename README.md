@@ -2,7 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
-The production URL is: http://marin.codefactory.live/travelex/
+The *production URL* is: http://marin.codefactory.live/travelex/ - 
+Please find a detailed layout of the *project structure* in the source code of the files _index.html_ and _app.modules.ts_
 
 ## Development server
 
