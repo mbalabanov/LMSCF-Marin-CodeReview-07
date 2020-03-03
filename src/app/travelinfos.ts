@@ -46,5 +46,53 @@ export let travelitems = [
 		startdate: 'September 3rd, 2020',
 		duration: 21,
 		description: 'Fall in love with Nepal, prayer flags and spicy chai.'
+	},
+	{
+		name: 'Vienna',
+		photo: 'assets/img/travel07.jpg',
+		price: 640,
+		startdate: 'September 7th, 2020',
+		duration: 12,
+		description: 'The old imperial capital of the Austro-Hungarian Empire.'
+	},
+	{
+		name: 'Milano',
+		photo: 'assets/img/travel08.jpg',
+		price: 590,
+		startdate: 'September 16th, 2020',
+		duration: 7,
+		description: 'In this city, fashion makes the world go round.'
+	},
+	{
+		name: 'Verona',
+		photo: 'assets/img/travel09.jpg',
+		price: 610,
+		startdate: 'October 1st, 2020',
+		duration: 12,
+		description: 'The only Verona without a field bush.'
+	},
+	{
+		name: 'Paris',
+		photo: 'assets/img/travel10.jpg',
+		price: 590,
+		startdate: 'October 7th, 2020',
+		duration: 14,
+		description: 'Fall in love in the city of love.'
+	},
+	{
+		name: 'London',
+		photo: 'assets/img/travel11.jpg',
+		price: 580,
+		startdate: 'October 12th, 2020',
+		duration: 8,
+		description: 'The city that is touched by the world.'
+	},
+	{
+		name: 'New York City',
+		photo: 'assets/img/travel12.jpg',
+		price: 780,
+		startdate: 'October 12th, 2020',
+		duration: 12,
+		description: 'If you can make it there...'
 	}
 ];

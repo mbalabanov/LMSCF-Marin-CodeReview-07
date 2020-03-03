@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngTravelex"
+    }
+  },
+  "defaultProject": "AngTravelex",
+  "cli": {
+    "analytics": "4ac9041b-1f4e-477e-b2e2-6b0c2368c67b"
+  }
 }
